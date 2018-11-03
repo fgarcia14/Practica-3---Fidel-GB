@@ -1,6 +1,6 @@
 <?php
 //Definición de variable global
-$url="http://127.0.0.1/angularJsMvcMysqli/";
+$url=$_SERVER['REQUEST_URI'];
 
 //Definir el código de caracteres
 header('Content-Type: text/html; charset=utf-8');
@@ -18,10 +18,10 @@ setlocale(LC_MONETARY, 'en_US');
 ////////////////////////////////////////////////////////////////////////////////
 // Define constants for database connectivty
 ////////////////////////////////////////////////////////////////////////////////
-defined('DATABASE_HOST') ? NULL : define('DATABASE_HOST', 'localhost');
-defined('DATABASE_NAME') ? NULL : define('DATABASE_NAME', 'myInfo');
-defined('DATABASE_USER') ? NULL : define('DATABASE_USER', 'root');
-defined('DATABASE_PASSWORD') ? NULL : define('DATABASE_PASSWORD', 'root');
+defined('DATABASE_HOST') ? NULL : define('DATABASE_HOST', 'db4free.net');
+defined('DATABASE_NAME') ? NULL : define('DATABASE_NAME', 'mantenimiento');
+defined('DATABASE_USER') ? NULL : define('DATABASE_USER', 'fgarcia14');
+defined('DATABASE_PASSWORD') ? NULL : define('DATABASE_PASSWORD', 'Lagunas242.');
 
 ////////////////////////////////////////////////////////////////////////////////
 // Define absolute application paths
